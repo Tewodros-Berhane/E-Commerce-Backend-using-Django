@@ -41,12 +41,13 @@ INSTALLED_APPS = [
 	'rest_framework',
 	'playground',
     'store',
-	'store_custom',
     'tags',
 	'likes',
+	'core',
 ]
 
 MIDDLEWARE = [
+	# 'debug_toolbar.middleware.DebugToolbarMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -135,3 +136,5 @@ REST_FRAMEWORK = {
 	'COERCE_DECIMAL_TO_STRING' : False,
 	# 'DEFAULT_PAGINATION_CLASS' : 'rest_framework.PageNumberPagination',
 }
+
+AUTH_USER_MODEL = 'core.User'

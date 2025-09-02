@@ -1,5 +1,5 @@
 from django.urls import path
-from store.views import CartViewSet, CollectionViewSet, ProductViewSet, ReviewViewSet
+from store.views import CartItemViewSet, CartViewSet, CollectionViewSet, ProductViewSet, ReviewViewSet
 from rest_framework_nested import routers
 
 
@@ -10,5 +10,8 @@ router.register('carts', CartViewSet)
 
 products_router = routers.NestedDefaultRouter(router, 'products', lookup='product')
 products_router.register('reviews', ReviewViewSet, basename='product-reviews')
+carts_router = routers.NestedDefaultRouter(router, 'carts', lookup='cart')
+carts_router.register('items', CartItemViewSet, basename='cart-items')
 
-urlpatterns = router.urls + products_router.urls
+
+urlpatterns = router.urls + products_router.urls + carts_router.urls

@@ -1,5 +1,6 @@
 from django.conf import settings
 from django.db import models
+import rest_framework
 from uuid import uuid4
 from django.core.validators import MinValueValidator
 from storeapp.settings import AUTH_USER_MODEL
@@ -68,6 +69,9 @@ class Customer(models.Model):
 
 	class Meta():
 		ordering=['user__first_name', 'user__last_name']
+		permissions =[
+			('view_history', 'can view history')
+		]
 
 class Order(models.Model):
 	PAYMENT_STATUS_PENDING = 'P'
@@ -91,7 +95,7 @@ class Order(models.Model):
 
 
 class OrderItem(models.Model):
-	order = models.ForeignKey(Order, on_delete=models.PROTECT)
+	order = models.ForeignKey(Order, on_delete=models.PROTECT, related_name='items')
 	product = models.ForeignKey(Product, on_delete=models.PROTECT, related_name='orderitems')
 	quantity = models.PositiveSmallIntegerField()
 	unit_price = models.DecimalField(max_digits=6, decimal_places=2)

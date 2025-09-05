@@ -154,7 +154,7 @@
 				</tr>
 			</table>
 			<!-- migrations Submodule -->
-			<details>
+			<details open>
 				<summary><b>migrations</b></summary>
 				<blockquote>
 					<div class='directory-path' style='padding: 8px 0; color: #666;'>
@@ -174,7 +174,7 @@
 				</blockquote>
 			</details>
 			<!-- signals Submodule -->
-			<details>
+			<details open>
 				<summary><b>signals</b></summary>
 				<blockquote>
 					<div class='directory-path' style='padding: 8px 0; color: #666;'>
@@ -230,7 +230,7 @@
 				</tr>
 			</table>
 			<!-- migrations Submodule -->
-			<details>
+			<details open>
 				<summary><b>migrations</b></summary>
 				<blockquote>
 					<div class='directory-path' style='padding: 8px 0; color: #666;'>
@@ -306,7 +306,7 @@
 				</tr>
 			</table>
 			<!-- migrations Submodule -->
-			<details>
+			<details open>
 				<summary><b>migrations</b></summary>
 				<blockquote>
 					<div class='directory-path' style='padding: 8px 0; color: #666;'>
@@ -374,7 +374,7 @@
 				</blockquote>
 			</details>
 			<!-- signals Submodule -->
-			<details>
+			<details open>
 				<summary><b>signals</b></summary>
 				<blockquote>
 					<div class='directory-path' style='padding: 8px 0; color: #666;'>
@@ -462,7 +462,7 @@
 				</tr>
 			</table>
 			<!-- migrations Submodule -->
-			<details>
+			<details open>
 				<summary><b>migrations</b></summary>
 				<blockquote>
 					<div class='directory-path' style='padding: 8px 0; color: #666;'>

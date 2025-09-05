@@ -1,25 +1,5 @@
 <div id="top">
 
-<!-- HEADER STYLE: CLASSIC -->
-<div align="center">
-
-<img src="readmeai/assets/logos/purple.svg" width="30%" style="position: relative; top: 0; right: 0;" alt="Project Logo"/>
-
-# <code>❯ REPLACE-ME</code>
-
-<em>Transforming Data into Insights, One Connection at a Time</em>
-
-<!-- BADGES -->
-<!-- local repository, no metadata badges. -->
-
-<em>Built with the tools and technologies:</em>
-
-<img src="https://img.shields.io/badge/Python-3776AB.svg?style=default&logo=Python&logoColor=white" alt="Python">
-
-</div>
-<br>
-
----
 
 ## Table of Contents
 
@@ -28,15 +8,7 @@
 - [Features](#features)
 - [Project Structure](#project-structure)
     - [Project Index](#project-index)
-- [Getting Started](#getting-started)
-    - [Prerequisites](#prerequisites)
-    - [Installation](#installation)
-    - [Usage](#usage)
-    - [Testing](#testing)
-- [Roadmap](#roadmap)
-- [Contributing](#contributing)
-- [License](#license)
-- [Acknowledgments](#acknowledgments)
+
 
 ---
 
@@ -50,15 +22,12 @@
 
 |      | Component       | Details                              |
 | :--- | :-------------- | :----------------------------------- |
-| ⚙️  | **Architecture**  | <ul><li>The project uses a microservices architecture, with each service written in Python and using Flask as the web framework.</li><li>Services communicate with each other using RESTful APIs.</li></ul> |
-| 🔩 | **Code Quality**  | <ul><li>The codebase follows PEP 8 style guidelines.</li><li>Code is well-organized into logical modules and functions.</li><li>No duplicate code found.</li></ul> |
-| 📄 | **Documentation** | <ul><li>Project documentation is generated using Sphinx.</li><li>API documentation is available at `http://localhost:5000/docs`.</li></ul> |
-| 🔌 | **Integrations**  | <ul><li>The project integrates with a SQLite database, stored in `db.sqlite3` file.</li><li>Uses Python's built-in `sqlite3` module for database interactions.</li></ul> |
+| ⚙️  | **Architecture**  | <ul><li>The project uses a microservices architecture, with each service written in Python and using Django as the web framework.</li><li>Services communicate with each other using RESTful APIs.</li></ul> |
+| 🔩 | **Code Quality**  | <ul><li>Code is well-organized into logical modules and functions.</ul> |
 | 🧩 | **Modularity**    | <ul><li>The codebase is modularized into separate services and modules.</li><li>Each service has its own configuration files.</li></ul> |
-| 🧪 | **Testing**       | <ul><li>Unit tests are written using Python's built-in `unittest` module.</li><li>Integration tests are written using Pytest.</li></ul> |
-| ⚡️  | **Performance**   | <ul><li>The project uses Flask's built-in caching mechanism to improve performance.</li><li>Database queries are optimized for performance.</li></ul> |
+| ⚡️  | **Performance**   | <ul><li>Database queries are optimized for performance.</li></ul> |
 | 🛡️ | **Security**      | <ul><li>The project uses HTTPS encryption for secure communication.</li><li>Input validation and sanitization are implemented throughout the codebase.</li></ul> |
-| 📦 | **Dependencies**  | <ul><li>The project depends on Python 3.9 or later.</li><li>Requires `db.sqlite3` file to be present in the root directory.</li></ul> |
+| 📦 | **Dependencies**  | <ul><li>The project depends on Python 3.9 or later.</li></ul> |
 | 🚀 | **Scalability**   | <ul><li>The project is designed to scale horizontally by adding more instances of each service.</li><li>Load balancing and queuing mechanisms are implemented for high-traffic scenarios.</li></ul> |
 
 ---
@@ -127,7 +96,7 @@
 <details open>
 	<summary><b><code>/</code></b></summary>
 	<!-- __root__ Submodule -->
-	<details>
+	<details open>
 		<summary><b>__root__</b></summary>
 		<blockquote>
 			<div class='directory-path' style='padding: 8px 0; color: #666;'>
@@ -140,10 +109,6 @@
 				</tr>
 			</thead>
 				<tr style='border-bottom: 1px solid #eee;'>
-					<td style='padding: 8px;'><b><a href='/db.sqlite3'>db.sqlite3</a></b></td>
-					<td style='padding: 8px;'>Project/src/main/java/resources/test/integration/unit/target/generated-sources/...``<code>This summary provides a high-level overview of the </code>code_file`s purpose and contribution to the overall codebase architecture, without delving into technical implementation details.</td>
-				</tr>
-				<tr style='border-bottom: 1px solid #eee;'>
 					<td style='padding: 8px;'><b><a href='/manage.py'>manage.py</a></b></td>
 					<td style='padding: 8px;'>- Launches Djangos command-line utility for administrative tasks, enabling efficient management of the project<br>- This file serves as a gateway to execute various administrative commands and scripts, streamlining development and maintenance processes within the storeapp settings.</td>
 				</tr>
@@ -151,7 +116,7 @@
 		</blockquote>
 	</details>
 	<!-- core Submodule -->
-	<details>
+	<details open>
 		<summary><b>core</b></summary>
 		<blockquote>
 			<div class='directory-path' style='padding: 8px 0; color: #666;'>
@@ -231,7 +196,7 @@
 		</blockquote>
 	</details>
 	<!-- likes Submodule -->
-	<details>
+	<details open>
 		<summary><b>likes</b></summary>
 		<blockquote>
 			<div class='directory-path' style='padding: 8px 0; color: #666;'>
@@ -287,7 +252,7 @@
 		</blockquote>
 	</details>
 	<!-- store Submodule -->
-	<details>
+	<details open>
 		<summary><b>store</b></summary>
 		<blockquote>
 			<div class='directory-path' style='padding: 8px 0; color: #666;'>
@@ -431,7 +396,7 @@
 		</blockquote>
 	</details>
 	<!-- storeapp Submodule -->
-	<details>
+	<details open>
 		<summary><b>storeapp</b></summary>
 		<blockquote>
 			<div class='directory-path' style='padding: 8px 0; color: #666;'>
@@ -463,7 +428,7 @@
 		</blockquote>
 	</details>
 	<!-- tags Submodule -->
-	<details>
+	<details open>
 		<summary><b>tags</b></summary>
 		<blockquote>
 			<div class='directory-path' style='padding: 8px 0; color: #666;'>
@@ -519,120 +484,3 @@
 		</blockquote>
 	</details>
 </details>
-
----
-
-## Getting Started
-
-### Prerequisites
-
-This project requires the following dependencies:
-
-- **Programming Language:** Python
-
-### Installation
-
-Build  from the source and intsall dependencies:
-
-1. **Clone the repository:**
-
-    ```sh
-    ❯ git clone ../
-    ```
-
-2. **Navigate to the project directory:**
-
-    ```sh
-    ❯ cd 
-    ```
-
-3. **Install the dependencies:**
-
-echo 'INSERT-INSTALL-COMMAND-HERE'
-
-### Usage
-
-Run the project with:
-
-echo 'INSERT-RUN-COMMAND-HERE'
-
-### Testing
-
- uses the {__test_framework__} test framework. Run the test suite with:
-
-echo 'INSERT-TEST-COMMAND-HERE'
-
----
-
-## Roadmap
-
-- [X] **`Task 1`**: <strike>Implement feature one.</strike>
-- [ ] **`Task 2`**: Implement feature two.
-- [ ] **`Task 3`**: Implement feature three.
-
----
-
-## Contributing
-
-- **💬 [Join the Discussions](https://LOCAL///discussions)**: Share your insights, provide feedback, or ask questions.
-- **🐛 [Report Issues](https://LOCAL///issues)**: Submit bugs found or log feature requests for the `` project.
-- **💡 [Submit Pull Requests](https://LOCAL///blob/main/CONTRIBUTING.md)**: Review open PRs, and submit your own PRs.
-
-<details closed>
-<summary>Contributing Guidelines</summary>
-
-1. **Fork the Repository**: Start by forking the project repository to your LOCAL account.
-2. **Clone Locally**: Clone the forked repository to your local machine using a git client.
-   ```sh
-   git clone .
-   ```
-3. **Create a New Branch**: Always work on a new branch, giving it a descriptive name.
-   ```sh
-   git checkout -b new-feature-x
-   ```
-4. **Make Your Changes**: Develop and test your changes locally.
-5. **Commit Your Changes**: Commit with a clear message describing your updates.
-   ```sh
-   git commit -m 'Implemented new feature x.'
-   ```
-6. **Push to LOCAL**: Push the changes to your forked repository.
-   ```sh
-   git push origin new-feature-x
-   ```
-7. **Submit a Pull Request**: Create a PR against the original project repository. Clearly describe the changes and their motivations.
-8. **Review**: Once your PR is reviewed and approved, it will be merged into the main branch. Congratulations on your contribution!
-</details>
-
-<details closed>
-<summary>Contributor Graph</summary>
-<br>
-<p align="left">
-   <a href="https://LOCAL{///}graphs/contributors">
-      <img src="https://contrib.rocks/image?repo=/">
-   </a>
-</p>
-</details>
-
----
-
-## License
-
- is protected under the [LICENSE](https://choosealicense.com/licenses) License. For more details, refer to the [LICENSE](https://choosealicense.com/licenses/) file.
-
----
-
-## Acknowledgments
-
-- Credit `contributors`, `inspiration`, `references`, etc.
-
-<div align="right">
-
-[![][back-to-top]](#top)
-
-</div>
-
-
-[back-to-top]: https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square
-
-
----
